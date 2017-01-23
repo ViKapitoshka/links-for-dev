@@ -1,0 +1,96 @@
+body {
+  text-align: center;
+  background-color: #313a3d;
+  background-attachment: fixed;
+  background-image: url("../img/bg.jpg");
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+  font-family: Helvetica, Arial, sans-serif;
+  padding-top: 112px;
+}
+.content {	
+	padding-top: 80px;
+}
+section {
+  padding-top: 40px;
+	background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+content,
+section,
+dt {
+	padding-bottom: 40px;
+}
+
+a,
+h2 {
+	color: #61686b;
+}
+h1 {
+	color: #fff;
+}
+
+/* Полоса после заголовков */
+h1:after,
+h2:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 2px;
+  margin: 0.75em auto 0 auto;
+  position: relative;
+  width: 4em;
+}
+h2:after {
+  background: #ddd;
+}
+
+/* Footer */
+footer {
+  padding-bottom: 40px;
+  color: rgba(255, 255, 255, 0.2);
+}
+p {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.icon {
+  border: none;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 40px;
+}
+
+/* Links */
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: border-bottom-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  border-bottom: dotted 1px;
+}
+a:hover,
+a:active,
+a:focus {  
+  text-decoration: none;
+  border-bottom-color: transparent;
+  color: #fff;
+}
+dd a,
+dd a:hover,
+dd a:active,
+dd a:focus {
+  color: #8cd1a8;
+}
+
+@media (min-width: 768px) {
+  .content {  
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 568px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
